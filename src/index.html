@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
@@ -5,19 +6,19 @@
 </head>
 <body>
 
-<nav class="navbar">
+<section class="navbar">
   <div class="navbar-brand">
     <div class="navbar-item">
-      <div class="field has-addons">
+      <form class="field has-addons">
         <div class="control">
-          <input class="input username" type="text" placeholder="enter github username">
+          <input class="input username js-username-input" type="text" placeholder="enter github username">
         </div>
         <div class="control">
-          <button class="button is-info load-username">
+          <button class="button is-info load-username js-load-username" type="button">
             Load
           </button>
         </div>
-      </div>
+      </form>
     </div>
 
     <div class="navbar-item">
@@ -25,7 +26,7 @@
     </div>
 
   </div>
-</nav>
+</section>
 
 
 <div class="container">
@@ -38,17 +39,17 @@
         <div class="media">
           <div class="media-left">
             <figure class="media-left image is-64x64">
-              <img src="http://placekitten.com/200/200" id="profile-image">
+              <img src="http://placekitten.com/200/200" id="profile-image" class="js-profile-img" alt="">
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-5" id="profile-name">John Smith</p>
-            <p class="subtitle is-6"><a href="#" id="profile-url">@johnsmith</a></p>
+            <p class="title is-5 js-profile-name" id="profile-name">John Smith</p>
+            <p class="subtitle is-6"><a href="#" class="js-profile-url" id="profile-url">@johnsmith</a></p>
           </div>
         </div>
 
 
-        <div class="content" id="profile-bio">
+        <div class="content js-profile-bio" id="profile-bio">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor
             vestibulum ut.</p>
         </div>
@@ -65,8 +66,8 @@
           <div class="timeline-content">
             <p class="heading">Jan 21, 2016</p>
             <div class="content">
-                  <span class="gh-username">
-                    <img src="https://avatars.githubusercontent.com/u/2310778?"/>
+                  <span class="media gh-username">
+                    <img class="media-left image" src="https://avatars.githubusercontent.com/u/2310778?" alt=""/>
                     <a href="https://github.com/sethii">sethii</a>
                   </span>
               closed
@@ -83,8 +84,8 @@
           <div class="timeline-content">
             <p class="heading">Jan 19, 2016</p>
             <div class="content">
-                <span class="gh-username">
-                  <img src="https://avatars.githubusercontent.com/u/1208786?"/>
+                <span class="media gh-username">
+                  <img class="media-left image" src="https://avatars.githubusercontent.com/u/1208786?" alt=""/>
                   <a href="https://github.com/simonsipl">gajdus</a>
                 </span>
               created
@@ -103,8 +104,8 @@
           <div class="timeline-content">
             <p class="heading">Jan 19, 2016</p>
             <div class="content">
-                <span class="gh-username">
-                  <img src="https://avatars.githubusercontent.com/u/2310778"/>
+                <span class="media gh-username">
+                  <img class="media-left image" src="https://avatars.githubusercontent.com/u/2310778" alt=""/>
                   <a href="https://github.com/aherok">sethii</a>
                 </span>
               opened

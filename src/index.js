@@ -1,6 +1,7 @@
-import styles from './assets/scss/app.scss';
-import {App} from "./app";
+import 'promise-polyfill/src/polyfill';
+import './assets/scss/app.scss';
+import userProfile from './js/profile';
 
-const app = new App();
-
-app.initializeApp();
+window.onload = () => {
+  userProfile();
+};
