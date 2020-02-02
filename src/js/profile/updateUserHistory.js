@@ -47,8 +47,6 @@ const updateUserHistory = userHistory => {
     return historyItem;
   });
 
-  console.log(timelineElements);
-
   userTimeline.innerHTML = timelineElements.join(' ');
 };
 
