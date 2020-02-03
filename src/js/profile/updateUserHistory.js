@@ -1,14 +1,17 @@
+import parseDate from '../common/parseDate';
+
 const updateUserHistory = userHistory => {
   const userTimeline = document.querySelector('.js-user-timeline');
 
   const timelineElements = userHistory.map(element => {
     let historyItem;
+
     if (element.payload.comment) {
       historyItem = `
       <div class="timeline-item">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <p class="heading">${element.created_at}</p>
+          <p class="heading">${parseDate(element.created_at)}</p>
           <div class="content">
             <span class="media gh-username">
               <img class="media-left image" src="${element.actor.avatar_url}" alt=""/>
@@ -28,7 +31,7 @@ const updateUserHistory = userHistory => {
       <div class="timeline-item">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <p class="heading">${element.created_at}</p>
+          <p class="heading">${parseDate(element.created_at)}</p>
           <div class="content">
             <span class="media gh-username">
               <img class="media-left image" src="${element.actor.avatar_url}" alt=""/>
