@@ -1,0 +1,26 @@
+@import "~bulma";
+@import "~bulma-timeline";
+
+.navbar {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+}
+
+.gh-username img {
+  width: 32px;
+}
+
+#profile-bio {
+  margin-top: 10px;
+}
+
+.timeline {
+  &-item {
+    padding-bottom: 1em;
+  }
+}
+
+.has-error {
+  border-color: #ff0000;
+}
+
